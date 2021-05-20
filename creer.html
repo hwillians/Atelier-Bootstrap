@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Collaborateurs</a>
+                    <a class="nav-link" href="index.html">Collaborateurs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Statistiques</a>
@@ -36,7 +36,6 @@
     </nav>
     <div class="container-fluid">
         <h2>Nouveau collaborateur</h2>
-
         <form class="container">
             <div class="form-group row">
                 <label for="nomCollaborateur" class="col-sm-4 col-form-label">Nom</label>
@@ -62,7 +61,6 @@
                     <textarea class="form-control" id="adresse" rows="3"></textarea>
                 </div>
             </div>
-
             <div class="form-group row">
                 <label for="numSecu" class="col-sm-4 col-form-label">Numéro de sécurité sociale</label>
                 <div class="col-sm-8">
@@ -70,15 +68,46 @@
                 </div>
             </div>
 
-
             <div class="form-group row justify-content-end">
-
-                <button type="submit" class="btn btn-primary">Créer</button>
-
+                <button type="button" class="btn btn-primary" data-toggle="modal"
+                    data-target="#staticBackdrop">Créer</button>
             </div>
         </form>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Création d'un collaborateur</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Vous êtes sur le point de créer un nouveau collaborateur : </p>
+                    <div class="row row-cols-1 row-cols-sm-2">
+                        <div class="col">Nom</div>
+                        <div class="col">************</div>
+                        <div class="col">Prénom</div>
+                        <div class="col">************</div>
+                        <div class="col">Date de naissance</div>
+                        <div class="col">************</div>
+                        <div class="col">Adresss</div>
+                        <div class="col">************</div>
+                        <div class="col">Numero de sécurité sociale</div>
+                        <div class="col">************</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn-primary">Confirmer</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
