@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>SGP - Editer un colaboarteur</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">
+            <img src="images/Logo_TV_2015.jpg" width="30" height="30" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Collaborateurs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Statistiques</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Activités</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4 mt-5">
+                <img src="images/photo.jpg" class="img-fluid mx-auto d-block" alt="Photo collaborateur">
+            </div>
+            <div class="col-sm-8 mt-5">
+                <form class="container">
+                    <div class="accordion" id="accordionExample">
+                        <!-- card identité-->
+                        <div class="card">
+                            <div class="card-header" id="headingIdentite">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseIdentite" aria-expanded="true"
+                                    aria-controls="collapseIdentite">
+                                    Identité
+                                </button>
+                            </div>
+
+                            <div id="collapseIdentite" class="collapse show" aria-labelledby="headingIdentite"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="form-group row">
+                                        <label for="nomCollaborateur"
+                                            class="col-md-4 col-form-label md-text-right">Nom</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="nomCollaborateur">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="prenomCollaborateur"
+                                            class="col-md-4 col-form-label md-text-right">Prénom</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="prenomCollaborateur">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="dateNaissance" class="col-md-4 col-form-label md-text-right">Date
+                                            Naissance</label>
+                                        <div class="col-sm-8">
+                                            <input type="date" class="form-control" id="dateNaissance">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="adresse"
+                                            class="col-md-4 col-form-label md-text-right">Adresse</label>
+                                        <div class="col-sm-8">
+                                            <textarea class="form-control" id="adresse" rows="2"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="numSecu" class="col-md-4 col-form-label md-text-right">Numéro de
+                                            sécurité
+                                            sociale</label>
+                                        <div class="col-sm-8">
+                                            <input type="number" class="form-control" id="numSecu">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="phone"
+                                            class="col-md-4 col-form-label md-text-right">Téléphone</label>
+                                        <div class="col-sm-8">
+                                            <input type="tel" class="form-control" id="phone">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- fin card identité-->
+                        <!-- card poste-->
+                        <div class="card">
+
+                            <div class="card-header" id="headingPoste">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Poste
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingPoste"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="form-group row">
+                                        <label for="departement"
+                                            class="col-md-4 col-form-label md-text-right">Département</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="departement">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="nomPoste" class="col-md-4 col-form-label md-text-right">Nom</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="nomPoste">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- fin card poste-->
+
+                        <!-- card banque-->
+                        <div class="card">
+                            <div class="card-header" id="headingBanque">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseBanque" aria-expanded="false"
+                                        aria-controls="collapseBanque">
+                                        Coordonnées banquaires
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseBanque" class="collapse" aria-labelledby="headingBanque"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="form-group row">
+                                        <label for="iban" class="col-md-4 col-form-label md-text-right">IBAN</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="iban">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="bic" class="col-md-4 col-form-label md-text-right">BIC</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="bic">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row justify-content-end">
+                            <a type="button"  class="btn btn-primary m-3">Sauvegarder</a>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
